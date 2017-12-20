@@ -6,7 +6,7 @@ body{
 }
 
 /*GLOBAL CONTENER*/
-#game{
+#content{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,14 +14,21 @@ body{
 
 /*TITRE*/
 #title{
-  /*FONTS*/
-  font-family: BearHugs;
-  font-size: 64px;
-  font-weight: bold;
-  /*POLISH*/
-  color: #D6AB60;
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.75),
-    -2px -2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 80px;
+}
+
+/*ENSEMBLE JEU + INFOS*/
+#game{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*INFORMATIONS SUR LE DEROULEMENT DE LA PARTIE*/
+#infos{
+  font-size: 48px;
+  text-decoration: underline;
 }
 
 /*JEU*/
@@ -52,6 +59,15 @@ td{
 .player2{
   background: url("../assets/sign-x.png");
   background-size: cover;
+}
+
+.text{
+  /*FONTS*/
+  font-family: BearHugs;
+  font-weight: bold;
+  /*POLISH*/
+  color: #D6AB60;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.75), -2px -2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /*FONTS*/
