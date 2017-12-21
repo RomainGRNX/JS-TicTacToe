@@ -14,7 +14,19 @@ body{
 
 /*TITRE*/
 #title{
+  width: 558px;
+  height: 100px;
+  /*FONTS*/
   font-size: 80px;
+  padding-top: 8px;
+  text-align: center;
+  /*BACKGROUND*/
+  background: url("../assets/title-frame.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*POLISH*/
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75), -4px -4px 4px rgba(0, 0, 0, 0.75),
+    4px 4px 4px rgba(255, 255, 255, 0.4) inset, -4px -4px 4px rgba(0, 0, 0, 0.4) inset;
 }
 
 /*ENSEMBLE JEU + INFOS*/
@@ -44,23 +56,67 @@ body{
   2px 2px 4px rgba(0, 0, 0, 0.75) inset, -2px -2px 2px rgba(0, 0, 0, 0.25) inset;
 }
 
+/*LES CELLULES DU TABLEAU*/
 td{
   width: 100px;
   height: 97px;
 }
 
-/*ROND*/
-.player1{
-  background: url("../assets/sign-o.png");
-  background-size: cover;
+/*DIV DES BOUTONS*/
+#buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*BOUTONS*/
+.button{
+  width: 221px;
+  height: 44px;
+  margin: 20px;
+  /*BACKGROUND*/
+  background: url("../assets/score-frame.png");
+  /*FONTS*/
+  font-size: 20px;
+  text-align: center;
+  padding-top: 16px;
 }
 
 /*CROIX*/
-.player2{
+.player1{
   background: url("../assets/sign-x.png");
   background-size: cover;
 }
 
+/*ROND*/
+.player2{
+  background: url("../assets/sign-o.png");
+  background-size: cover;
+}
+
+/*ALERTE DE FIN DE PARTIE*/
+.endAlert{
+  width: 560px;
+  height: 126px;
+  /*POSITION*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*FONTS*/
+  font-size: 48px;
+  text-align: center;
+  padding-top: 2px;
+  /*BACKGROUND*/
+  background: url("../assets/wooden-frame.png");
+  background-size: auto;
+  /*POLISH*/
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75), -4px -4px 4px rgba(0, 0, 0, 0.75),
+    4px 4px 4px rgba(255, 255, 255, 0.4) inset, -4px -4px 4px rgba(0, 0, 0, 0.4) inset;
+}
+
+/*CLASSE QUI GERE LES TEXTES*/
 .text{
   /*FONTS*/
   font-family: BearHugs;
@@ -74,4 +130,24 @@ td{
 @font-face {
   font-family: 'BearHugs';
   src: url('../assets/BEARHUGSBYRATTICSASSIN-Regular.ttf') ;
+}
+
+/*SCORES*/
+#scores{
+  width: 440px;
+  height: 390px;
+  margin-top: 20px;
+  /*POSITION*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*FONTS*/
+  font-size: 32px;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 5px;
+  /*BACKGROUND*/
+  background: url("../assets/scores-frame.png");
+  background-repeat: no-repeat;
 }
